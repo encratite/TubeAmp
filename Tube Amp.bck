@@ -5,9 +5,4 @@ D Transformer, split primary, dual secondary
 K transformer coil magnet
 $ENDCMP
 #
-$CMP Transformer_SP_2S
-D Transformer, split primary, dual secondary
-K transformer coil magnet
-$ENDCMP
-#
 #End Doc Library
