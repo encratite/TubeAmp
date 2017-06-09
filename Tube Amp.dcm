@@ -5,4 +5,9 @@ D Transformer, split primary, dual secondary
 K transformer coil magnet
 $ENDCMP
 #
+$CMP TS_JACK
+D Mono TS jack
+K ts mono audio jack
+$ENDCMP
+#
 #End Doc Library
