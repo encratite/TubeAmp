@@ -1,13 +1,18 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 12AX7
+D 12AX7 vacuum tube
+K 12ax7
+$ENDCMP
+#
 $CMP 369BX
 D Transformer, split primary, dual secondary
 K transformer coil magnet
 $ENDCMP
 #
 $CMP TS_JACK
-D 2-pin Mono audio Jack, withc switch contact
-K mono audio jack
+D Mono TS jack
+K ts mono audio jack
 $ENDCMP
 #
 #End Doc Library
