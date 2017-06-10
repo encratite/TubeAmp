@@ -5,9 +5,18 @@ D 12AX7 vacuum tube
 K 12ax7
 $ENDCMP
 #
+$CMP 369AX
+D Transformer, split primary, dual secondary
+K transformer coil magnet
+$ENDCMP
+#
 $CMP 369BX
 D Transformer, split primary, dual secondary
 K transformer coil magnet
+$ENDCMP
+#
+$CMP AC_2_Terminals
+K POWER, PWR
 $ENDCMP
 #
 $CMP TS_JACK
