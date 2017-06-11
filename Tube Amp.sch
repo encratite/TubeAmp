@@ -1049,9 +1049,9 @@ Wire Wire Line
 Wire Wire Line
 	4800 2300 4800 2450
 Wire Wire Line
-	4900 2300 4900 2550
+	4900 2550 4900 2300
 Wire Wire Line
-	4900 2550 4700 2550
+	2350 2550 7600 2550
 Wire Wire Line
 	4700 2550 4700 2300
 Wire Wire Line
@@ -1137,11 +1137,9 @@ Wire Wire Line
 Wire Wire Line
 	7050 1500 7050 1900
 Wire Wire Line
-	7150 2300 7150 2450
+	7150 2450 7150 2300
 Wire Wire Line
-	7250 2300 7250 2550
-Wire Wire Line
-	7250 2550 7050 2550
+	7250 2550 7250 2300
 Wire Wire Line
 	7050 2550 7050 2300
 Wire Wire Line
@@ -1222,8 +1220,6 @@ Wire Wire Line
 Connection ~ 9075 2050
 Wire Wire Line
 	8950 2050 8950 2150
-Wire Wire Line
-	2350 2550 2550 2550
 Connection ~ 8450 3600
 Wire Wire Line
 	10050 3600 10050 2950
@@ -1276,4 +1272,19 @@ Wire Wire Line
 Wire Wire Line
 	2300 750  2300 700 
 Connection ~ 2300 700 
+Connection ~ 4700 2550
+Connection ~ 2550 2550
+Connection ~ 7050 2550
+Connection ~ 4900 2550
+Wire Wire Line
+	2450 2450 7800 2450
+Text GLabel 7800 3700 3    50   Input ~ 0
+H2
+Text GLabel 7600 3700 3    50   Input ~ 0
+H1
+Connection ~ 7250 2550
+Wire Wire Line
+	7800 2450 7800 3700
+Wire Wire Line
+	7600 2550 7600 3700
 $EndSCHEMATC
