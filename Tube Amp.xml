@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/void/schematics/tubeamp2/Tube Amp 2.sch</source>
-    <date>Mon 05 Jun 2017 04:15:43 PM CEST</date>
+    <source>/home/void/schematics/TubeAmp/Tube Amp.sch</source>
+    <date>Tue 13 Jun 2017 11:38:07 PM CEST</date>
     <tool>Eeschema 4.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
+        <title>Experimental Tube Amp</title>
         <company/>
-        <rev/>
+        <rev>1</rev>
         <date/>
-        <source>Tube Amp 2.sch</source>
-        <comment number="1" value=""/>
+        <source>Tube Amp.sch</source>
+        <comment number="1" value="Power supply, configurable gain stages and tone stack"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -19,14 +19,609 @@
     </sheet>
   </design>
   <components>
-    <comp ref="C1">
-      <value>10 uF</value>
+    <comp ref="C4">
+      <value>330u</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5935CED1</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>DF10-G</value>
+      <libsource lib="device" part="D_Bridge_+-AA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59356E60</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>Fuse 1A</value>
+      <libsource lib="device" part="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59357B33</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>100</value>
+      <fields>
+        <field name="Power">1W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5939048C</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>100</value>
+      <fields>
+        <field name="Power">1W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5939053C</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>68k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593A185D</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>TS_In</value>
+      <libsource lib="Tube Amp" part="TS_JACK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593A4835</tstamp>
+    </comp>
+    <comp ref="V1">
+      <value>12AX7</value>
+      <libsource lib="Tube Amp" part="12AX7"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593AE181</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>220k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593CD303</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>100k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593CD383</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>100k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593D8920</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>4k LIN</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593EEC56</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>22n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5935661D</tstamp>
+      <tstamp>593FAE67</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>4k LIN</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593FB513</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>22n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5940798C</tstamp>
+    </comp>
+    <comp ref="S1">
+      <value>DIP_Switch_3</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C0E44</tstamp>
+    </comp>
+    <comp ref="S3">
+      <value>DIP_Switch_2</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593F3627</tstamp>
+    </comp>
+    <comp ref="S2">
+      <value>DIP_Switch_2</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593FD952</tstamp>
+    </comp>
+    <comp ref="S4">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593FE66C</tstamp>
+    </comp>
+    <comp ref="T1">
+      <value>369AX</value>
+      <libsource lib="Tube Amp" part="369AX"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59408E9F</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1u</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5941D06D</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5942CF26</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>1k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5942D12D</tstamp>
+    </comp>
+    <comp ref="RV3">
+      <value>1M LOG</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5943A43B</tstamp>
+    </comp>
+    <comp ref="RV4">
+      <value>1M LOG</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59445DF8</tstamp>
+    </comp>
+    <comp ref="V2">
+      <value>12AX7</value>
+      <libsource lib="Tube Amp" part="12AX7"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C7162</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>100k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C7174</tstamp>
+    </comp>
+    <comp ref="RV5">
+      <value>4k LIN</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C7186</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>22n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C718D</tstamp>
+    </comp>
+    <comp ref="RV6">
+      <value>4k LIN</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C7199</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>22n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C71A0</tstamp>
+    </comp>
+    <comp ref="S12">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C71BE</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C71C4</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>1k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C71CA</tstamp>
+    </comp>
+    <comp ref="RV7">
+      <value>1M LOG</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C71D0</tstamp>
+    </comp>
+    <comp ref="RV8">
+      <value>1M LOG</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593C71D6</tstamp>
+    </comp>
+    <comp ref="S10">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593CD825</tstamp>
+    </comp>
+    <comp ref="S7">
+      <value>DIP_Switch_3</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593DADD0</tstamp>
+    </comp>
+    <comp ref="S9">
+      <value>DIP_Switch_3</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593E0546</tstamp>
+    </comp>
+    <comp ref="S14">
+      <value>DIP_Switch_3</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>593FC200</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>100k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594557BB</tstamp>
+    </comp>
+    <comp ref="V3">
+      <value>12AX7</value>
+      <libsource lib="Tube Amp" part="12AX7"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461D92</tstamp>
+    </comp>
+    <comp ref="RV9">
+      <value>4k LIN</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461DA4</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>1k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461DCA</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461DD0</tstamp>
+    </comp>
+    <comp ref="RV10">
+      <value>1M LOG</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461DD6</tstamp>
+    </comp>
+    <comp ref="S16">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461DE2</tstamp>
+    </comp>
+    <comp ref="S15">
+      <value>DIP_Switch_3</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461E09</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>100k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59461E1F</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>33k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594AFD87</tstamp>
+    </comp>
+    <comp ref="RV11">
+      <value>250k LIN</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594B0EF6</tstamp>
+    </comp>
+    <comp ref="RV12">
+      <value>1M LOG</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594B1007</tstamp>
+    </comp>
+    <comp ref="RV13">
+      <value>25k LIN</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594B2264</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>470p</value>
+      <fields>
+        <field name="Voltage">400 V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594B236D</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>22n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594B271A</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>22n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594B2862</tstamp>
+    </comp>
+    <comp ref="RV14">
+      <value>1M LOG</value>
+      <libsource lib="device" part="POT_TRIM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594F3505</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>TS_Out</value>
+      <libsource lib="Tube Amp" part="TS_JACK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59508094</tstamp>
+    </comp>
+    <comp ref="S17">
+      <value>DIP_Switch_2</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>596190C4</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>22u</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>596EC5D0</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>10n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>596ED0BA</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10u</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>597047CF</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>597047D6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>4.7u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5970D3FE</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5970D753</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5970DA35</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>1u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5971376F</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>1u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>597138B5</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>1u</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59713A31</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1n</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5940F25F</tstamp>
+    </comp>
+    <comp ref="S8">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5940F759</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>1n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5947BB49</tstamp>
+    </comp>
+    <comp ref="S5">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59481179</tstamp>
+    </comp>
+    <comp ref="S11">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59499E77</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>1n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59499F67</tstamp>
+    </comp>
+    <comp ref="S13">
+      <value>DIP_Switch_1</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5949F41F</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>1n</value>
+      <fields>
+        <field name="Voltage">400V</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594A8655</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>100k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594AA48F</tstamp>
+    </comp>
+    <comp ref="S6">
+      <value>DIP_Switch_2</value>
+      <libsource lib="Tube Amp" part="DIP_Switch_2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594AADB7</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>220k</value>
+      <fields>
+        <field name="Power">2W</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594AB467</tstamp>
     </comp>
   </components>
   <libparts>
+    <libpart lib="Tube Amp" part="12AX7">
+      <description>12AX7 vacuum tube</description>
+      <fields>
+        <field name="Reference">V</field>
+        <field name="Value">12AX7</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AA" type="input"/>
+        <pin num="2" name="AG" type="input"/>
+        <pin num="3" name="AK" type="input"/>
+        <pin num="4" name="AH" type="input"/>
+        <pin num="5" name="BH" type="input"/>
+        <pin num="6" name="BA" type="input"/>
+        <pin num="7" name="BG" type="input"/>
+        <pin num="8" name="BK" type="input"/>
+        <pin num="9" name="CH" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Tube Amp" part="369AX">
+      <description>Transformer, split primary, dual secondary</description>
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">369AX</field>
+      </fields>
+      <pins>
+        <pin num="1" name="120V_BLU" type="passive"/>
+        <pin num="2" name="110V_BLU/YEL" type="passive"/>
+        <pin num="3" name="100V_BRN/YEL" type="passive"/>
+        <pin num="4" name="0V_BRN" type="passive"/>
+        <pin num="5" name="120V_BLK" type="passive"/>
+        <pin num="6" name="110V_BLK/RED" type="passive"/>
+        <pin num="7" name="100V_WHT/BLK" type="passive"/>
+        <pin num="8" name="0V_WHT" type="passive"/>
+        <pin num="9" name="GRY" type="passive"/>
+        <pin num="10" name="RED_125V" type="passive"/>
+        <pin num="11" name="VIO_50V" type="passive"/>
+        <pin num="12" name="RED/YEL_0V" type="passive"/>
+        <pin num="13" name="RED_125V" type="passive"/>
+        <pin num="14" name="GRN_6.3V" type="passive"/>
+        <pin num="15" name="GREN/YEL" type="passive"/>
+        <pin num="16" name="GRN_6.3V" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="device" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
@@ -41,18 +636,537 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Tube Amp" part="DIP_Switch_1">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">DIP_Switch_1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Tube Amp" part="DIP_Switch_2">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">DIP_Switch_2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Tube Amp" part="DIP_Switch_3">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">DIP_Switch_3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Bridge_+-AA">
+      <description>Diode bridge (pins: 1=+, 2=-, 3=AC, 4=AC)</description>
+      <footprints>
+        <fp>D?Bridge*</fp>
+        <fp>D?Rectifier*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Bridge_+-AA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Fuse">
+      <description>Fuse, generic</description>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT_TRIM">
+      <description>Trim-Potentionmeter</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT_TRIM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Tube Amp" part="TS_JACK">
+      <description>Mono TS jack</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TS_JACK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="device">
       <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
+    <library logical="Tube Amp">
+      <uri>/home/void/schematics/TubeAmp/Tube Amp.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(C1-Pad1)">
-      <node ref="C1" pin="1"/>
+    <net code="1" name="Net-(RV3-Pad2)">
+      <node ref="S7" pin="1"/>
+      <node ref="S7" pin="2"/>
+      <node ref="RV3" pin="2"/>
     </net>
-    <net code="2" name="Net-(C1-Pad2)">
+    <net code="2" name="Net-(S7-Pad3)">
+      <node ref="S7" pin="3"/>
+      <node ref="S9" pin="3"/>
+    </net>
+    <net code="3" name="Net-(S14-Pad4)">
+      <node ref="S14" pin="4"/>
+      <node ref="V2" pin="2"/>
+    </net>
+    <net code="4" name="Net-(S14-Pad3)">
+      <node ref="S15" pin="3"/>
+      <node ref="S14" pin="3"/>
+    </net>
+    <net code="5" name="Net-(RV7-Pad2)">
+      <node ref="RV7" pin="2"/>
+      <node ref="S14" pin="2"/>
+      <node ref="S14" pin="1"/>
+    </net>
+    <net code="6" name="Net-(C12-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="V2" pin="8"/>
+      <node ref="C12" pin="1"/>
+    </net>
+    <net code="7" name="Net-(C17-Pad1)">
+      <node ref="C17" pin="1"/>
+      <node ref="RV8" pin="1"/>
+    </net>
+    <net code="8" name="Net-(C12-Pad2)">
+      <node ref="C12" pin="2"/>
+      <node ref="S10" pin="2"/>
+    </net>
+    <net code="9" name="Net-(S9-Pad4)">
+      <node ref="V2" pin="7"/>
+      <node ref="S9" pin="4"/>
+    </net>
+    <net code="10" name="Net-(S15-Pad4)">
+      <node ref="S15" pin="4"/>
+      <node ref="V3" pin="7"/>
+    </net>
+    <net code="11" name="Net-(RV10-Pad2)">
+      <node ref="V3" pin="2"/>
+      <node ref="RV10" pin="2"/>
+    </net>
+    <net code="12" name="Net-(C20-Pad2)">
+      <node ref="C20" pin="2"/>
+      <node ref="S16" pin="2"/>
+    </net>
+    <net code="13" name="H1">
+      <node ref="V2" pin="5"/>
+      <node ref="V3" pin="4"/>
+      <node ref="V3" pin="5"/>
+      <node ref="V2" pin="4"/>
+      <node ref="R6" pin="2"/>
+      <node ref="V1" pin="5"/>
+      <node ref="T1" pin="16"/>
+      <node ref="V1" pin="4"/>
+    </net>
+    <net code="14" name="Net-(C20-Pad1)">
+      <node ref="R15" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="V3" pin="8"/>
+    </net>
+    <net code="15" name="Net-(C3-Pad2)">
+      <node ref="S2" pin="4"/>
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="16" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2"/>
+      <node ref="S2" pin="3"/>
+    </net>
+    <net code="17" name="Net-(C5-Pad1)">
+      <node ref="V1" pin="3"/>
+      <node ref="R10" pin="1"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="18" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="V1" pin="8"/>
+    </net>
+    <net code="19" name="Net-(C14-Pad2)">
+      <node ref="S12" pin="2"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="20" name="Net-(C15-Pad1)">
+      <node ref="C15" pin="1"/>
+      <node ref="RV7" pin="3"/>
+    </net>
+    <net code="21" name="Net-(C7-Pad1)">
+      <node ref="RV4" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="22" name="Net-(C14-Pad1)">
+      <node ref="C14" pin="1"/>
+      <node ref="V2" pin="3"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="23" name="Net-(F1-Pad2)">
+      <node ref="T1" pin="8"/>
+      <node ref="F1" pin="2"/>
+    </net>
+    <net code="24" name="Net-(D1-Pad4)">
+      <node ref="D1" pin="4"/>
+      <node ref="T1" pin="13"/>
+    </net>
+    <net code="25" name="Net-(D1-Pad3)">
+      <node ref="D1" pin="3"/>
+      <node ref="T1" pin="10"/>
+    </net>
+    <net code="26" name="Net-(T1-Pad4)">
+      <node ref="T1" pin="4"/>
+      <node ref="T1" pin="5"/>
+    </net>
+    <net code="27" name="Net-(C6-Pad1)">
+      <node ref="RV3" pin="3"/>
+      <node ref="C6" pin="1"/>
+      <node ref="S8" pin="2"/>
+      <node ref="C9" pin="2"/>
+    </net>
+    <net code="28" name="Net-(R4-Pad1)">
+      <node ref="S3" pin="3"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="29" name="Net-(C8-Pad2)">
+      <node ref="C8" pin="2"/>
+      <node ref="S5" pin="2"/>
+    </net>
+    <net code="30" name="Net-(C13-Pad2)">
+      <node ref="C13" pin="2"/>
+      <node ref="S11" pin="2"/>
+    </net>
+    <net code="31" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2"/>
+      <node ref="V3" pin="6"/>
+      <node ref="RV10" pin="3"/>
+    </net>
+    <net code="32" name="Net-(C9-Pad1)">
+      <node ref="S8" pin="1"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="33" name="Net-(R9-Pad2)">
+      <node ref="S6" pin="4"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="34" name="Net-(R7-Pad2)">
+      <node ref="R7" pin="2"/>
+      <node ref="S6" pin="3"/>
+    </net>
+    <net code="35" name="Net-(R17-Pad1)">
+      <node ref="V3" pin="3"/>
+      <node ref="S17" pin="1"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="36" name="Net-(C16-Pad2)">
+      <node ref="C16" pin="2"/>
+      <node ref="S13" pin="2"/>
+    </net>
+    <net code="37" name="Net-(RV11-Pad2)">
+      <node ref="RV11" pin="2"/>
+      <node ref="RV14" pin="1"/>
+    </net>
+    <net code="38" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="RV14" pin="2"/>
+    </net>
+    <net code="39" name="Net-(C21-Pad1)">
+      <node ref="RV11" pin="1"/>
+      <node ref="C21" pin="1"/>
+    </net>
+    <net code="40" name="Net-(C22-Pad1)">
+      <node ref="RV12" pin="2"/>
+      <node ref="RV12" pin="1"/>
+      <node ref="RV11" pin="3"/>
+      <node ref="C22" pin="1"/>
+    </net>
+    <net code="41" name="Net-(RV12-Pad3)">
+      <node ref="RV12" pin="3"/>
+      <node ref="RV13" pin="1"/>
+    </net>
+    <net code="42" name="Net-(C22-Pad2)">
+      <node ref="C23" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="43" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="V1" pin="6"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="44" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="S3" pin="4"/>
+    </net>
+    <net code="45" name="Net-(C21-Pad2)">
+      <node ref="R18" pin="1"/>
+      <node ref="S17" pin="4"/>
+      <node ref="S17" pin="3"/>
+      <node ref="C21" pin="2"/>
+    </net>
+    <net code="46" name="H2">
+      <node ref="T1" pin="14"/>
+      <node ref="V3" pin="9"/>
+      <node ref="V2" pin="9"/>
+      <node ref="R5" pin="2"/>
+      <node ref="V1" pin="9"/>
+    </net>
+    <net code="47" name="Net-(RV5-Pad1)">
+      <node ref="RV5" pin="1"/>
+    </net>
+    <net code="48" name="N">
+      <node ref="F1" pin="1"/>
+    </net>
+    <net code="49" name="Net-(T1-Pad12)">
+      <node ref="T1" pin="12"/>
+    </net>
+    <net code="50" name="Net-(T1-Pad15)">
+      <node ref="T1" pin="15"/>
+    </net>
+    <net code="51" name="L">
+      <node ref="T1" pin="2"/>
+    </net>
+    <net code="52" name="GND">
+      <node ref="C19" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="RV8" pin="3"/>
+      <node ref="R17" pin="2"/>
+      <node ref="S10" pin="1"/>
+      <node ref="S2" pin="1"/>
+      <node ref="RV1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="D1" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="RV6" pin="2"/>
+      <node ref="S2" pin="2"/>
+      <node ref="S4" pin="1"/>
+      <node ref="S12" pin="1"/>
+      <node ref="RV2" pin="2"/>
+      <node ref="RV7" pin="1"/>
+      <node ref="S6" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="S6" pin="1"/>
+      <node ref="RV13" pin="3"/>
+      <node ref="RV14" pin="3"/>
+      <node ref="RV3" pin="1"/>
+      <node ref="RV4" pin="3"/>
+      <node ref="RV10" pin="1"/>
+      <node ref="RV5" pin="2"/>
+      <node ref="RV9" pin="2"/>
       <node ref="C1" pin="2"/>
+      <node ref="S16" pin="1"/>
+    </net>
+    <net code="53" name="Net-(R3-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="RV1" pin="3"/>
+    </net>
+    <net code="54" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="RV2" pin="3"/>
+    </net>
+    <net code="55" name="Net-(S1-Pad6)">
+      <node ref="S7" pin="6"/>
+      <node ref="S1" pin="6"/>
+      <node ref="S7" pin="5"/>
+    </net>
+    <net code="56" name="Net-(RV4-Pad2)">
+      <node ref="S9" pin="2"/>
+      <node ref="S9" pin="1"/>
+      <node ref="RV4" pin="2"/>
+    </net>
+    <net code="57" name="Net-(T1-Pad11)">
+      <node ref="T1" pin="11"/>
+    </net>
+    <net code="58" name="Net-(R14-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="RV6" pin="3"/>
+    </net>
+    <net code="59" name="Net-(R11-Pad2)">
+      <node ref="RV5" pin="3"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="60" name="Net-(RV6-Pad1)">
+      <node ref="RV6" pin="1"/>
+    </net>
+    <net code="61" name="Net-(S7-Pad4)">
+      <node ref="S7" pin="4"/>
+      <node ref="V1" pin="2"/>
+    </net>
+    <net code="62" name="Net-(RV1-Pad1)">
+      <node ref="RV1" pin="1"/>
+    </net>
+    <net code="63" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="S1" pin="5"/>
+    </net>
+    <net code="64" name="Net-(T1-Pad3)">
+      <node ref="T1" pin="3"/>
+    </net>
+    <net code="65" name="Net-(T1-Pad1)">
+      <node ref="T1" pin="1"/>
+    </net>
+    <net code="66" name="Net-(T1-Pad6)">
+      <node ref="T1" pin="6"/>
+    </net>
+    <net code="67" name="Net-(T1-Pad7)">
+      <node ref="T1" pin="7"/>
+    </net>
+    <net code="68" name="Net-(T1-Pad9)">
+      <node ref="T1" pin="9"/>
+    </net>
+    <net code="69" name="Net-(R1-Pad1)">
+      <node ref="V1" pin="7"/>
+      <node ref="S1" pin="4"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="70" name="Net-(RV2-Pad1)">
+      <node ref="RV2" pin="1"/>
+    </net>
+    <net code="71" name="Net-(C5-Pad2)">
+      <node ref="S4" pin="2"/>
+      <node ref="C5" pin="2"/>
+    </net>
+    <net code="72" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2"/>
+      <node ref="S5" pin="1"/>
+      <node ref="V1" pin="1"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="73" name="B+">
+      <node ref="R12" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="V3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="S3" pin="2"/>
+      <node ref="S3" pin="1"/>
+    </net>
+    <net code="74" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="S1" pin="3"/>
+      <node ref="S1" pin="2"/>
+      <node ref="S1" pin="1"/>
+    </net>
+    <net code="75" name="Net-(C17-Pad2)">
+      <node ref="C17" pin="2"/>
+      <node ref="S13" pin="1"/>
+      <node ref="R13" pin="2"/>
+      <node ref="V2" pin="1"/>
+    </net>
+    <net code="76" name="Net-(C15-Pad2)">
+      <node ref="C15" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="V2" pin="6"/>
+      <node ref="S11" pin="1"/>
+    </net>
+    <net code="77" name="Net-(RV9-Pad1)">
+      <node ref="RV9" pin="1"/>
+    </net>
+    <net code="78" name="Net-(R15-Pad2)">
+      <node ref="RV9" pin="3"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="79" name="Net-(RV8-Pad2)">
+      <node ref="S15" pin="1"/>
+      <node ref="S15" pin="2"/>
+      <node ref="RV8" pin="2"/>
+    </net>
+    <net code="80" name="Net-(S14-Pad5)">
+      <node ref="S14" pin="5"/>
+      <node ref="S9" pin="6"/>
+      <node ref="S14" pin="6"/>
+      <node ref="S9" pin="5"/>
+    </net>
+    <net code="81" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1"/>
+      <node ref="RV13" pin="2"/>
+    </net>
+    <net code="82" name="Net-(S15-Pad5)">
+      <node ref="S17" pin="2"/>
+      <node ref="S15" pin="6"/>
+      <node ref="S15" pin="5"/>
     </net>
   </nets>
 </export>
