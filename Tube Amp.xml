@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>D:\Code\tubeamp\Tube Amp.sch</source>
-    <date>2017-06-14 11:19:38</date>
+    <source>/home/void/schematics/TubeAmp/Tube Amp.sch</source>
+    <date>Fri 16 Jun 2017 05:06:01 PM CEST</date>
     <tool>Eeschema 4.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -375,27 +375,18 @@
     </comp>
     <comp ref="C21">
       <value>470p</value>
-      <fields>
-        <field name="Voltage">400 V</field>
-      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>594B236D</tstamp>
     </comp>
     <comp ref="C22">
       <value>22n</value>
-      <fields>
-        <field name="Voltage">400V</field>
-      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>594B271A</tstamp>
     </comp>
     <comp ref="C23">
       <value>22n</value>
-      <fields>
-        <field name="Voltage">400V</field>
-      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>594B2862</tstamp>
@@ -548,7 +539,7 @@
       <tstamp>594A8655</tstamp>
     </comp>
     <comp ref="R9">
-      <value>100k</value>
+      <value>200k</value>
       <fields>
         <field name="Power">2W</field>
       </fields>
@@ -563,7 +554,7 @@
       <tstamp>594AADB7</tstamp>
     </comp>
     <comp ref="R7">
-      <value>220k</value>
+      <value>300k</value>
       <fields>
         <field name="Power">2W</field>
       </fields>
@@ -752,10 +743,10 @@
   </libparts>
   <libraries>
     <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="Tube Amp">
-      <uri>D:\Code\TubeAmp\Tube Amp.lib</uri>
+      <uri>/home/void/schematics/TubeAmp/Tube Amp.lib</uri>
     </library>
   </libraries>
   <nets>
